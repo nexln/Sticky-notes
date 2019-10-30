@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson 8</title>
+  <style>
+    body{
+      height: 1000px;
+    }
+    .note{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: red;
+      cursor: pointer;
+    }
+    .fixed{
+      position: fixed;
+      background: green;
+      top: 0px;
+    }
+    #addNewNote{
+      position: fixed;
+      right: 20px;
+    }
+    .deleteBtn{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      background-color: transparent;
+      border-color: transparent;
+      cursor: pointer;
+    }
+    .saveButton {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      background-color: transparent;
+      border-color: transparent;
+      cursor: pointer;
+    }
+    .contentArea{
+      width: 97%;
+      height: 80%;
+      font-style: italic;
+      background-color: transparent;
+      border-color: transparent;
+      resize: none;
+
+    }
+  </style>
+</head>
+<body>
+  <div id="board"></div>
+  <button id="addNewNote">+</button>
+  <script src="scripts.js"></script>
+</body>
+</html>
